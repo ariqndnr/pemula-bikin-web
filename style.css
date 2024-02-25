@@ -1,0 +1,264 @@
+* 
+body{
+    margin: 0;
+    color: white;
+    font-family: Inter;
+}
+
+:root {
+    background-color: rgb(29, 28, 28);
+}
+
+::selection {
+    background-color: #000;
+    color: gray;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 10px;
+    margin: 10px;
+}
+
+.nav2container {
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 10px;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(196, 196, 196);
+    padding: 10px;
+}
+
+a:hover {
+    color: rgb(165, 165, 165);
+}
+
+
+.logo {
+    width: 40px;
+}
+
+.post {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    height: 70px;
+}
+
+/* navbar */
+
+.navContainer {
+    margin: 10;
+    padding: px;
+}
+
+.navContainer.scrolled {
+    background-color: black; /* Ganti warna header saat di-scroll */
+    animation: ease-in;
+    animation-timeline: scroll();
+}
+
+.wrapper {
+    /*background-color: rgb(29, 28, 28);*/
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    font-size: 17px;
+    height: 70px;
+    box-shadow: 10px black;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.lastname {
+    color: darkgrey;
+    padding-left: px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: left ;
+    align-items: left;
+    padding-left: 1px;
+}
+
+.navigation>li {
+    list-style-type: none;
+    padding: 1px;
+}
+
+.navigation>li>a {
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navigation>li>a:hover {
+    color: darkgray;
+}
+
+.navigation>li>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.navigation>li>img:hover {
+    width: 60px;
+    height: 60px;
+    border-radius: 10;
+    transition: all .3s ease-in-out;
+} 
+
+.navigation li ul li a {
+    /*justify-content: center;*/
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.dropdown {
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+}
+
+.dropdown-content {
+    display: none;
+    padding-left: 10px;
+}
+
+.dropdown-content ul li{
+    position: fixed;
+    top: 0%;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    font-size: 17px;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(29, 28, 28);
+    padding-left: 10px;
+    left: 90px;
+}
+
+.dropdown-content ul li:hover{
+    display: flex;
+}
+
+.dropdown-content:hover{
+    display: flex;
+}
+
+.active {
+    background-color: grey;
+    padding: 10px;
+}
+
+.active:hover {
+    color: white !important;
+    border-radius: 20vh;
+    transform: none
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    padding: 0%;
+}
+
+.bar {
+    top: 8%;
+    width: 100%;
+    height: 5px;
+    background-color: gray;
+    stroke: darkcyan;
+    stroke-width: 10%;
+    position: fixed;
+    left: 0%;
+    animation: progress;
+    animation-timeline: scroll();
+    transform-origin: 0%;
+}
+
+@keyframes progress {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/* tes div */
+
+button {
+    font-size: 50px;
+    padding: 20px 50px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border-radius: 45px;
+    border: none;
+    margin-bottom: 0;
+}
+
+input[type="checkbox"] {
+    padding: 400%;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    background-color: #000;
+    
+}
+
+input[type="checkbox"]:active{
+    border-radius: 100%;
+    background-color: black;
+    color: #000;
+}
+
+button:active {
+    background-color: rgb(51, 66, 66);
+    font-size: 45px;
+    transition: all 100ms;
+}
+
+.navContainer::before {
+    background-color: #000;
+}
+
+.navContainer::before::after {
+    opacity: 100%;
+    transition: all 1s;
+}
+
+.div-content {
+    padding: 3%;
+}
+
+.pic-header {
+    top: 1%;
+    margin: 0%;
+    padding: 0%;
+    width: 10%;
+}
