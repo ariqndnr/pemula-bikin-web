@@ -1,7 +1,6 @@
 html, body {
     background-color: rgb(29, 28, 28);
     color: white;
-    pointer-events: none;
 }
 
 h1, h2, h3, h4, h5 {
@@ -27,4 +26,21 @@ h1, h2, h3, h4, h5 {
 ::selection {
     pointer-events: none;
     
+}
+
+.link {
+    display: flex;
+    text-decoration: none;
+}
+.link ul {
+    display: flex;
+    text-decoration: none;
+}
+
+.link ul li a {
+    display: block;
+    align-items: center;
+    
+    text-decoration: none;
+    list-style: none;
 }
