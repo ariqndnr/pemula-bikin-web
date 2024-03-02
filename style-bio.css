@@ -1,46 +1,121 @@
 html, body {
+    margin: 0%;
+    padding: 0%;
     background-color: rgb(29, 28, 28);
     color: white;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Inter';
-    pointer-events: none;
+h1, h2, h3, h4, h5, p, a{
+    font-family: 'Inter' ;
 }
 
 .header1 {
     background-color: rgb(31, 26, 26);
-    min-height: 100vh;
-    padding: 10%;
+    padding: 4% ;
     text-align: center;
-    margin: 20%;
+    margin: 10%;
     align-items: center;
-
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .logo-header1 {
     width: 30%;
-    pointer-events: none;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 ::selection {
-    pointer-events: none;
     
 }
 
 .link {
-    display: flex;
-    text-decoration: none;
-}
-.link ul {
-    display: flex;
-    text-decoration: none;
+    padding-top: 20px;
+    background-color: rgb(31, 26, 26);
+
+    text-align: center;
+    margin: 10%;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.link ul li a {
+.link li {
+    list-style-type: none;
+    justify-content: left;
+    padding: 7px;
+}
+
+.link li a {
     display: block;
-    align-items: center;
-    
     text-decoration: none;
+    border: 2px solid rgb(121, 121, 121);
+    padding: 10px;
+    color: bisque;
+    height: auto;
+}
+
+.link li a:hover {
+    display: block;
+    text-decoration: none;
+    background-color: rgb(121, 121, 121);
+    padding: 10px;
+    color: bisque;
+}
+
+.footer-bio {
+    position: fixed;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+}
+
+footer li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+@media screen and (min-width: 700px){
+    .header1 {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: ;
+    }
+
+    .link {
+        width: 30%;
+        top: -120px;
+    }
+
+    .logo-header1 {
+       flex-wrap: wrap;
+       flex-direction: row;
+       width: 10%;
+       padding-left: 7%;
+       position: relative;
+       top: -120px;
+    }
+
+    .footer-bio {
+    
+        justify-content: left;
+        bottom: 110%;
+    }
+
+    footer {
+        margin: 0%;
+    }
+
+    footer li a {
+        justify-content: unset;
+    }
 }
