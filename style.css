@@ -48,6 +48,7 @@ a {
 
 a:hover {
     color: rgb(165, 165, 165);
+    text-decoration: underline;
 }
 
 
@@ -85,15 +86,16 @@ a:hover {
     display: flex;
     /*justify-content: space-between;*/
     align-items: center;
+    padding-top: 10px;
     font-size: 17px;
-    height: 70px;
+    height: px;
 }
 
 .brand {
     display: flex;
     align-items: center;
     flex-direction: row;
-    font-size: 30px;
+    font-size: 20px;
     padding: 20px;
 }
 
@@ -112,16 +114,18 @@ a:hover {
 .navigation>li {
     list-style-type: none;
     padding: 1px;
+    
 }
 
 .navigation>li>a {
     color: aliceblue;
-    font-size: 20px;
-    text-decoration: none;
+    font-size: 19px;
+    text-decoration: none;text-decoration: underline;
 }
 
 .navigation>li>a:hover {
     color: darkgray;
+    
 }
 
 .navigation>li>img {
