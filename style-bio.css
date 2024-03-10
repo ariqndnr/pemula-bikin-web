@@ -32,7 +32,6 @@ h1, h2, h3, h4, h5, p, a{
 .link {
     padding-top: 20px;
     background-color: rgb(31, 26, 26);
-
     text-align: center;
     margin: 10%;
     align-items: center;
@@ -86,14 +85,15 @@ footer {
 @media screen and (min-width: 700px){
     .header1 {
         padding: 10px;
-        display: flex;
+        display: inline-flex;
         flex-wrap: wrap;
         flex-direction: ;
     }
 
     .link {
         width: 30%;
-        top: -120px;
+        top: px;
+        he
     }
 
     .logo-header1 {
@@ -106,16 +106,24 @@ footer {
     }
 
     .footer-bio {
-    
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: left;
-        bottom: 110%;
     }
 
     footer {
         margin: 0%;
+        top: px;
     }
 
-    footer li a {
-        justify-content: unset;
+    .bio-footer footer {
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: ;
+        top: 120%;
+    }
+
+    .container .header1 {
+
     }
 }

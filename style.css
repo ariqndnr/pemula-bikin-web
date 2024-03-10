@@ -87,6 +87,7 @@ a:hover {
     /*justify-content: space-between;*/
     align-items: center;
     padding-top: 10px;
+    padding-left: 17px;
     font-size: 17px;
     height: px;
 }
@@ -119,7 +120,7 @@ a:hover {
 
 .navigation>li>a {
     color: aliceblue;
-    font-size: 19px;
+    font-size: 17px;
     text-decoration: none;text-decoration: underline;
 }
 
@@ -223,6 +224,10 @@ a:hover {
 }
 
 /* tes div */
+
+.isi {
+    font-size: small;
+}
 
 button {
     font-size: 50px;
