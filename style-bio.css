@@ -3,6 +3,7 @@ html, body {
     padding: 0%;
     background-color: rgb(29, 28, 28);
     color: white;
+    cursor: url(assets/logo.png), auto;
 }
 
 h1, h2, h3, h4, h5, p, a{
@@ -82,12 +83,16 @@ footer {
     margin-right: 70px;
 }
 
+body {
+    
+}
+
 @media screen and (min-width: 700px){
     .header1 {
+        position: fixed;
         padding: 10px;
         display: inline-flex;
         flex-wrap: wrap;
-        flex-direction: ;
     }
 
     .link {
