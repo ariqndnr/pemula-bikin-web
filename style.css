@@ -107,9 +107,9 @@ a:hover {
 
 .navigation {
     display: flex;
-    justify-content: left ;
     align-items: left;
     padding-left: 1px;
+    justify-content: top;
 }
 
 .navigation>li {
@@ -121,7 +121,7 @@ a:hover {
 .navigation>li>a {
     color: aliceblue;
     font-size: 17px;
-    text-decoration: none;text-decoration: underline;
+    text-decoration: none;
 }
 
 .navigation>li>a:hover {
@@ -150,7 +150,10 @@ a:hover {
 
 .dropdown {
     list-style: none;
+    font-size: 20px;
 }
+
+
 
 .dropdown:hover .dropdown-content{
     display: flex;
