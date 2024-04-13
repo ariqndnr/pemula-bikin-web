@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://kit.fontawesome.com/b81d0b46c8.js" crossorigin="anonymous"></script>
+    <!--script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script-->
 </head>
 <body>
     <div class="navContainer">
@@ -49,8 +51,9 @@
         <p style="
         padding-top: 0%;
         font-size: 75px;
+        padding-left: 2%;
         ">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, <button href="#">nisi?</button>
+        Jasa Bikin Motion Graphics Rp90000/project, Buka Setiap hari kecuali Kiamat Internet 💀 <i class="twa"></i><button href="#">mw banh</button>
     </p>
     
     </div>
@@ -75,20 +78,43 @@
             itaque reprehenderit minima tempora. Odit officia suscipit perferendis, corrupti officiis enim blanditiis exercitationem corporis voluptates numquam sed nobis nisi minima expedita dolorem non distinctio aliquam odio autem, dignissimos dolorum, nemo facilis repudiandae id! Nisi vero dolor repellendus maxime ipsum dignissimos suscipit tenetur ex, explicabo tempore autem doloribus fugit saepe voluptate deserunt. Ipsum ab inventore facilis dignissimos, fugiat minima officiis veritatis, itaque, minus delectus amet doloribus laborum. Repellat minus dolores debitis laudantium quidem? Pariatur repellendus, reiciendis eum esse cupiditate debitis cumque quasi? Culpa eligendi magni earum est optio ullam deserunt vitae excepturi ipsum quaerat a eaque saepe libero unde velit quas voluptas, quam sed obcaecati, quo reprehenderit reiciendis delectus. Ipsum vitae reprehenderit maiores atque est.
         </p>
     </div>
+    <div id="serahlu">
+        <h1>serah lu</h1>
+    </div>
 
 </div>    
 <div class="footer">
     <div class="footcontainer">
         <img src="assets/logo.png" alt="">
-        <div style="display: flex; align-items: center; padding: 10px;">
-            <p>karimiariqnadindra</p> 
-            <span id="tahun"></span>
+        <div>
+            <div style="display: flex; align-items: center;">
+            <h2>Made with ⌛ by ariqnadindra <span id="tahun"></span></h2>   
         <script>
             document.getElementById("tahun").innerHTML = new Date().getFullYear();
         </script>
+            </div>
+            <div>
+                <ul style="display: flex; list-style: none;">
+                <li><a href="/">/design</a>
+                <li><a href="/">Post</a></li>
+                <li><a href="/">Asset</a></li>
+                <li><a href="/">Kontak</a></li>
+                </ul>
+
+            </div>
         </div>
+
         
     </div>
+    <script>
+        window.onload = function() {    
+            // Parses the document body and    
+            // inserts <img> tags in place of Unicode Emojis    
+            twemoji.parse(document.body, 
+                    {folder: 'svg', ext: '.svg'} // This is to specify to Twemoji to use SVGs and not PNGs
+            );
 
+        }
+    </script>
 </body>
 </html>
