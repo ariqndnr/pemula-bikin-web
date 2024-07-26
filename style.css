@@ -19,7 +19,7 @@ body, html {
   'FILL' 0,
   'wght' 300,
   'GRAD' 0,
-  'opsz' 48
+  'opsz' 20
 }
 
 .container {
@@ -78,7 +78,7 @@ a:hover {
 }
 
 .wrapper {
-    box-shadow: 0 -5px 5px -5px rgba(78, 78, 78, 0.5);
+    box-shadow: 0 1px 7px 5px rgba(78, 78, 78, 0.5);
     background-color: rgb(29, 28, 28);/**/
     position: fixed;
     top: 0%;
@@ -150,7 +150,7 @@ a:hover {
 
 .dropdown {
     list-style: none;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 
@@ -166,7 +166,7 @@ a:hover {
 
 .dropdown-content ul li{
     position: fixed;
-    top: 0%;
+    top: 3%;
     display: flex;
     /*justify-content: space-between;*/
     align-items: center;
@@ -175,7 +175,7 @@ a:hover {
     height: 70px;
     background-color: rgb(29, 28, 28);
     padding-left: 10px;
-    left: 90px;
+    left: 100px;
 }
 
 .dropdown-content ul li:hover{
@@ -188,7 +188,7 @@ a:hover {
 
 .active {
     background-color: grey;
-    padding: 10px;
+    padding: px;
 }
 
 .active:hover {
@@ -273,7 +273,7 @@ button:active {
 }
 
 .div-content {
-    padding: 1%;
+    padding: 8vh;
 }
 
 .pic-header {
@@ -302,6 +302,10 @@ button:active {
     width: 40px;
 }
 
+/* 
+
+Previous
+
 #serahlu {
     color: white;
     background-color: #000;
@@ -318,5 +322,21 @@ button:active {
     padding: 10px;
     margin: 10px;
     font-style: italic;
-    justify-content: center;
-}
+    justify-content: center; 
+    }
+    
+*/
+#serahlu {
+    color: black; /* default color */
+    background-color: #fff; /* default background color */
+    padding: 10px;
+    margin: 10px;
+    font-style: normal; /* default font style */
+    text-align: center; /* use text-align instead of justify-content */
+  }
+  
+  #serahlu:hover {
+    color: white;
+    background-color: #9c9c9c;
+    font-style: italic;
+  }
